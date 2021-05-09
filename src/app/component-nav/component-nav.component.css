@@ -1,0 +1,25 @@
+.docs-component-viewer-nav {
+  position: sticky;
+  top: 0;
+}
+
+.docs-component-viewer-nav .docs-component-viewer-nav-content {
+  width: 240px;
+  height: 100vh;
+  overflow: auto;
+}
+.mat-list-base {
+  padding-top: 0;
+}
+
+.docs-component-viewer-nav .docs-component-viewer-nav-content a {
+  display: block;
+  text-decoration: none;
+}
+
+.docs-component-viewer-nav-content
+  .mat-nav-list
+  .mat-list-item
+  .mat-list-item-content {
+  padding-left: 25px;
+}
