@@ -1,5 +1,14 @@
 <mat-sidenav-container>
-  <mat-sidenav-content>
-    <div class="docs-component-sidenav-inner-content"></div>
+  <mat-sidenav-content class="mat-drawer-content mat-sidenav-content">
+    <div class="docs-component-sidenav-content">
+      <div class="docs-component-sidenav-inner-content">
+        <main class="docs-component-sidenav-body-content">
+          <app-component-nav></app-component-nav>
+          <router-outlet></router-outlet>
+          <app-component-viewer></app-component-viewer>
+        </main>
+        <app-footer></app-footer>
+      </div>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

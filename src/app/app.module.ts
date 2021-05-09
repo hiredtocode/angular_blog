@@ -29,6 +29,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { GithubButtonComponent } from './github-button/github-button.component';
 import { GitlabButtonComponent } from './gitlab-button/gitlab-button.component';
 import { ComponentSidenavComponent } from './component-sidenav/component-sidenav.component';
+import { ComponentNavComponent } from './component-nav/component-nav.component';
+import { ComponentViewerComponent } from './component-viewer/component-viewer.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +43,9 @@ import { ComponentSidenavComponent } from './component-sidenav/component-sidenav
     GithubButtonComponent,
     GitlabButtonComponent,
     ComponentSidenavComponent,
+    ComponentNavComponent,
+    ComponentViewerComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,4 +10,44 @@ app > router-outlet + app-component-sidenav {
 .docs-component-sidenav-inner-content {
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+
+.docs-component-sidenav-body-content {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.docs-component-viewer-nav {
+  position: sticky;
+  top: 0;
+}
+
+.docs-component-viewer-nav-content {
+  width: 240px;
+  height: 100vh;
+  overflow: auto;
+}
+
+.mat-nav-list {
+  padding-top: 0;
+}
+
+.mat-list-item {
+  display: block;
+  text-decoration: none;
+}
+
+.mat-drawer-content .mat-sidenav-content {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  overflow: auto;
+}
+
+.docs-component-sidenav-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
