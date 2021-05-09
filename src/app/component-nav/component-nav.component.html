@@ -1,9 +1,39 @@
 <div class="docs-component-viewer-nav">
   <div class="docs-component-viewer-nav-content">
-    <mat-nav-list class="mat-nav-list">
-      <a href="#" class="mat-list-item">Main</a>
-      <a href="#" class="mat-list-item">Resume</a>
-      <a href="#" class="mat-list-item">Portfolio</a>
+    <mat-nav-list class="mat-nav-list mat-list-base" role="navigation">
+      <a
+        class="mat-list-item"
+        mat-list-item
+        routerLinkActive=""
+        href="/components/main"
+      >
+        <div class="mat-list-item-content">
+          <div class="mat-ripple mat-list-item-ripple"></div>
+          Main
+        </div>
+      </a>
+      <a
+        class="mat-list-item"
+        mat-list-item
+        routerLinkActive=""
+        href="/components/resume"
+      >
+        <div class="mat-list-item-content">
+          <div class="mat-ripple mat-list-item-ripple"></div>
+          Resume
+        </div>
+      </a>
+      <a
+        class="mat-list-item"
+        mat-list-item
+        routerLinkActive=""
+        href="/components/portfolio"
+      >
+        <div class="mat-list-item-content">
+          <div class="mat-ripple mat-list-item-ripple"></div>
+          Portfolio
+        </div>
+      </a>
     </mat-nav-list>
   </div>
 </div>
