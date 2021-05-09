@@ -28,6 +28,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import { GithubButtonComponent } from './github-button/github-button.component';
 import { GitlabButtonComponent } from './gitlab-button/gitlab-button.component';
+import { ComponentSidenavComponent } from './component-sidenav/component-sidenav.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { GitlabButtonComponent } from './gitlab-button/gitlab-button.component';
     NavigationComponent,
     GithubButtonComponent,
     GitlabButtonComponent,
+    ComponentSidenavComponent,
   ],
   imports: [
     BrowserModule,
