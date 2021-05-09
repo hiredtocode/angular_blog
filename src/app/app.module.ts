@@ -32,6 +32,9 @@ import { ComponentSidenavComponent } from './component-sidenav/component-sidenav
 import { ComponentNavComponent } from './component-nav/component-nav.component';
 import { ComponentViewerComponent } from './component-viewer/component-viewer.component';
 import { FooterComponent } from './footer/footer.component';
+import { MainPageComponent } from './main-page-button/main-page.component';
+import { ResumePageComponent } from './resume-page-button/resume-page.component';
+import { PortfolioPageButtonComponent } from './portfolio-page-button/portfolio-page-button.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +49,9 @@ import { FooterComponent } from './footer/footer.component';
     ComponentNavComponent,
     ComponentViewerComponent,
     FooterComponent,
+    MainPageComponent,
+    ResumePageComponent,
+    PortfolioPageButtonComponent,
   ],
   imports: [
     BrowserModule,
