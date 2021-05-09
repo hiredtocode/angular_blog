@@ -23,12 +23,6 @@ app > router-outlet + app-component-sidenav {
   top: 0;
 }
 
-.docs-component-viewer-nav-content {
-  width: 240px;
-  height: 100vh;
-  overflow: auto;
-}
-
 .mat-nav-list {
   padding-top: 0;
 }
@@ -50,4 +44,15 @@ app > router-outlet + app-component-sidenav {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+}
+
+.docs-component-sidenav-inner-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.docs-component-sidenav-body-content {
+  display: flex;
+  flex: 1 1 auto;
 }
