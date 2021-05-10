@@ -29,7 +29,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { GithubButtonComponent } from './github-button/github-button.component';
 import { GitlabButtonComponent } from './gitlab-button/gitlab-button.component';
 import { ComponentSidenavComponent } from './sidenav/sidenav.component';
-import { ComponentNavComponent } from './nav/nav.component';
+import { ComponentNavComponent } from './sidenav-items/sidenav-items.component';
 import { ComponentViewerComponent } from './viewer/viewer.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainPageComponent } from './main-page-button/main-page.component';
