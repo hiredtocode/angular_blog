@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-component-sidenav',
-  templateUrl: './component-sidenav.component.html',
-  styleUrls: ['./component-sidenav.component.css'],
+  selector: 'app-sidenav',
+  templateUrl: './sidenav.component.html',
+  styleUrls: ['./sidenav.component.css'],
 })
 export class ComponentSidenavComponent implements OnInit {
   constructor() {}

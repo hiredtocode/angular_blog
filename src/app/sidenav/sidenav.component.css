@@ -1,8 +1,8 @@
-app-root > app-component-sidenav {
+app-root > app-sidenav {
   flex: 1;
 }
 
-app > router-outlet + app-component-sidenav {
+app > router-outlet + app-sidenav {
   margin-top: 56px;
   overflow-y: auto;
 }
@@ -55,4 +55,37 @@ app > router-outlet + app-component-sidenav {
 .docs-component-sidenav-body-content {
   display: flex;
   flex: 1 1 auto;
+}
+
+.toc-container {
+  width: 18%;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  bottom: 12px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.toc-inner {
+  font-size: 13px;
+  font-size: 1.3rem;
+  overflow-y: visible;
+  padding: 4px 0 0 10px;
+}
+ul.toc-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 8px 0 0;
+}
+.toc-list .h1 {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+.toc-inner ul.toc-list li {
+  box-sizing: border-box;
+  line-height: 24px;
+  line-height: 2.4rem;
+  padding: 9px 0 9px 12px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
 }
