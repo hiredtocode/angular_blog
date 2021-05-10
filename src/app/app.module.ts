@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
@@ -32,9 +32,7 @@ import { ComponentSidenavComponent } from './sidenav/sidenav.component';
 import { ComponentNavComponent } from './sidenav-items/sidenav-items.component';
 import { ComponentViewerComponent } from './viewer/viewer.component';
 import { FooterComponent } from './footer/footer.component';
-import { MainPageComponent } from './main-page-button/main-page.component';
-import { ResumePageComponent } from './resume-page-button/resume-page.component';
-import { PortfolioPageButtonComponent } from './portfolio-page-button/portfolio-page-button.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -49,9 +47,8 @@ import { PortfolioPageButtonComponent } from './portfolio-page-button/portfolio-
     ComponentNavComponent,
     ComponentViewerComponent,
     FooterComponent,
-    MainPageComponent,
-    ResumePageComponent,
-    PortfolioPageButtonComponent,
+    routingComponents,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

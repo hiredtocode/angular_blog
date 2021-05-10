@@ -30,3 +30,7 @@ app-navbar {
   border-radius: 4px;
   overflow: visible;
 }
+
+nav a.active {
+  color: lightskyblue;
+}
