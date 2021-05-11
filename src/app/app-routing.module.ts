@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from './main/main.component';
+import { MainComponent } from './main-page/main-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ResumeComponent } from './resume/resume.component';
+import { PortfolioComponent } from './portfolio-page/portfolio-page.component';
+import { ResumeComponent } from './resume-page/resume-page.component';
 
 const routes: Routes = [
   // Order of routes matter
