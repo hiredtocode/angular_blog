@@ -26,8 +26,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
-import { GithubButtonComponent } from './github-button/github-button.component';
-import { GitlabButtonComponent } from './gitlab-button/gitlab-button.component';
 import { ComponentSidenavComponent } from './sidenav/sidenav.component';
 import { ComponentNavComponent } from './sidenav-items/sidenav-items.component';
 import { ComponentViewerComponent } from './viewer/viewer.component';
@@ -41,8 +39,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ResumeComponent,
     MainComponent,
     NavigationComponent,
-    GithubButtonComponent,
-    GitlabButtonComponent,
     ComponentSidenavComponent,
     ComponentNavComponent,
     ComponentViewerComponent,

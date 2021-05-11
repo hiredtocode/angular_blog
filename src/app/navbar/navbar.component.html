@@ -1,22 +1,45 @@
-<nav class="docs-navbar-header" toolbar color="primary">
-  <button mat-icon-button class="menu-icon" aria-label="Menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
+<nav>
+  <!-- Menu button at the top left side -->
+  <!-- //TODO Menu button toggle "https://www.youtube.com/watch?v=v8NpQYH2O5M" -->
+  <button class="menu-icon" aria-label="Menu icon">Menu toggle button</button>
+  <!-- Spacer -->
   <span class="spacer"></span>
-  <button>
-    <a routerLink="/main" routerLinkActive="active">Main</a>
-  </button>
-  <button>
-    <a routerLink="/resume" routerLinkActive="active">Resume</a>
-  </button>
-  <button>
-    <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
-  </button>
-  <!-- <app-main-page-button></app-main-page-button>
-  <app-resume-page-button></app-resume-page-button>
-  <app-portfolio-page-button></app-portfolio-page-button> -->
+  <!-- Page navigation -->
+  <mat-nav-list class="mat-nav-list mat-list-base" role="navigation">
+    <mat-list-item mat-button class="mat-list-item" *ngFor="let link of links">
+      <a class="nav-link" href="/{{ link }}">{{ link | uppercase }}</a>
+    </mat-list-item>
+    <!-- <button>
+      <a routerLink="/main" routerLinkActive="active">Main</a>
+    </button>
+    <button>
+      <a routerLink="/resume" routerLinkActive="active">Resume</a>
+    </button>
+    <button>
+      <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
+    </button> -->
+  </mat-nav-list>
+  <!-- Spacer -->
+  <span class="spacer"></span>
+  <a
+    href="https://github.com/hiredtocode"
+    aria-label="Hiredtocode GitHub Repository"
+    aria-disabled="false"
+    ><span class="mat-button-wrapper"
+      ><img
+        src="../../../assets/img/homepage/GitHub-Mark-32px.png"
+        alt="Github" /></span
+  ></a>
+  <a
+    href="https://gitlab.com/hiredtocode"
+    aria-label="Hiredtocode GitLab Repository"
+    aria-disabled="false"
+    ><span class="mat-button-wrapper"
+      ><img
+        src="../../../assets/img/homepage/gitlab-icon-1-color-black-rgb.svg"
+        alt="Gitlab" /></span
+  ></a>
 
-  <span class="spacer"></span>
-  <app-github-button class="github-icon"></app-github-button>
-  <app-gitlab-button class="gitlab-icon"></app-gitlab-button>
+  <!-- <app-github-button></app-github-button>
+  <app-gitlab-button></app-gitlab-button> -->
 </nav>
