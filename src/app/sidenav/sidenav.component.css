@@ -7,56 +7,9 @@ app > router-outlet + app-sidenav {
   overflow-y: auto;
 }
 
-.docs-component-sidenav-inner-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+.logo {
+  width: 20px;
 }
-
-.docs-component-sidenav-body-content {
-  display: flex;
-  flex: 1 1 auto;
-}
-
-.docs-component-viewer-nav {
-  position: sticky;
-  top: 0;
-}
-
-.mat-nav-list {
-  padding-top: 0;
-}
-
-.mat-list-item {
-  display: block;
-  text-decoration: none;
-}
-
-.mat-drawer-content .mat-sidenav-content {
-  position: relative;
-  z-index: 1;
-  display: block;
-  height: 100%;
-  overflow: auto;
-}
-
-.docs-component-sidenav-content {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-.docs-component-sidenav-inner-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.docs-component-sidenav-body-content {
-  display: flex;
-  flex: 1 1 auto;
-}
-
 .toc-container {
   width: 18%;
   position: fixed;
@@ -87,4 +40,32 @@ ul.toc-list {
   padding: 9px 0 9px 12px;
   position: relative;
   transition: all 0.3s ease-in-out;
+}
+
+.hamburgerMenu {
+  display: block;
+  position: relative;
+}
+
+.hamburgerMenu,
+.hamburgerMenu::before,
+.hamburgerMenu::after {
+  width: 2em;
+  height: 3px;
+  background: black;
+  transition: transform 250ms ease-in-out;
+}
+
+.hamburgerMenu::before,
+.hamburgerMenu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburgerMenu::before {
+  bottom: 6px;
+}
+.hamburgerMenu::after {
+  top: 6px;
 }
