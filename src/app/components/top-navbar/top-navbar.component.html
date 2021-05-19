@@ -9,7 +9,7 @@
   <!-- Page navigation middle section -->
   <ul class="nav-links" role="navigation">
     <li mat-button *ngFor="let link of links">
-      <a class="nav-link" href="/{{ link }}">{{ link | uppercase }}</a>
+      <a class="nav-link" routerLink="/{{ link }}">{{ link | uppercase }}</a>
     </li>
   </ul>
   <!-- Spacer -->
