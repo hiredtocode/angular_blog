@@ -18,7 +18,7 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { NavigationComponent } from './navbar/navbar.component';
+import { NavigationComponent } from './top-navbar/top-navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
@@ -27,10 +27,10 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ComponentSidenavComponent } from './sidenav/sidenav.component';
-import { ComponentNavComponent } from './sidenav-items/sidenav-items.component';
-import { ComponentViewerComponent } from './viewer/viewer.component';
+import { ComponentNavComponent } from './sidenav/sidenav-items/sidenav-items.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageContentComponent } from './main-page/page-content/page-content.component';
 
 @NgModule({
   declarations: [
@@ -41,10 +41,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     NavigationComponent,
     ComponentSidenavComponent,
     ComponentNavComponent,
-    ComponentViewerComponent,
     FooterComponent,
     routingComponents,
     PageNotFoundComponent,
+    PageContentComponent,
   ],
   imports: [
     BrowserModule,
