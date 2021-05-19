@@ -30,7 +30,7 @@ import { ComponentSidenavComponent } from './components/sidenav/sidenav.componen
 import { ComponentNavComponent } from './components/sidenav/sidenav-items/sidenav-items.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
-import { PageContentComponent } from './pages/main-page/page-content/page-content.component';
+import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +44,7 @@ import { PageContentComponent } from './pages/main-page/page-content/page-conten
     FooterComponent,
     routingComponents,
     PageNotFoundComponent,
-    PageContentComponent,
+    ContentComponent,
   ],
   imports: [
     BrowserModule,
