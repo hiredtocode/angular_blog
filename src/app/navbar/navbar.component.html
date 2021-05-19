@@ -1,44 +1,44 @@
-<nav>
+<nav class="nav-container">
   <!-- Menu button at the top left side -->
   <!-- //TODO Menu button toggle "https://www.youtube.com/watch?v=v8NpQYH2O5M" -->
-  <button class="menu-icon" aria-label="Menu icon">Menu toggle button</button>
+  <a href="/">
+    <img id="logo" src="../../assets/img/homepage/jh-logo.png" alt="" />
+  </a>
   <!-- Spacer -->
   <span class="spacer"></span>
-  <!-- Page navigation -->
-  <mat-nav-list class="mat-nav-list mat-list-base" role="navigation">
-    <mat-list-item mat-button class="mat-list-item" *ngFor="let link of links">
+  <!-- Page navigation middle section -->
+  <ul class="nav-links" role="navigation">
+    <li mat-button *ngFor="let link of links">
       <a class="nav-link" href="/{{ link }}">{{ link | uppercase }}</a>
-    </mat-list-item>
-    <!-- <button>
-      <a routerLink="/main" routerLinkActive="active">Main</a>
-    </button>
-    <button>
-      <a routerLink="/resume" routerLinkActive="active">Resume</a>
-    </button>
-    <button>
-      <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
-    </button> -->
-  </mat-nav-list>
+    </li>
+  </ul>
   <!-- Spacer -->
   <span class="spacer"></span>
+
+  <!-- buttons on the right  -->
   <a
     href="https://github.com/hiredtocode"
+    target="_"
+    rel="noopener"
     aria-label="Hiredtocode GitHub Repository"
     aria-disabled="false"
-    ><span class="mat-button-wrapper"
-      ><img
-        src="../../../assets/img/homepage/GitHub-Mark-32px.png"
-        alt="Github" /></span
-  ></a>
+    ><img
+      class="git"
+      src="../../../assets/img/homepage/github-logo.png"
+      alt="Github"
+  /></a>
   <a
     href="https://gitlab.com/hiredtocode"
+    target="_"
+    rel="noopener"
     aria-label="Hiredtocode GitLab Repository"
     aria-disabled="false"
-    ><span class="mat-button-wrapper"
-      ><img
-        src="../../../assets/img/homepage/gitlab-icon-1-color-black-rgb.svg"
-        alt="Gitlab" /></span
-  ></a>
+    ><img
+      class="git"
+      src="../../../assets/img/homepage/gitlab-logo.png
+        "
+      alt="Gitlab"
+  /></a>
 
   <!-- <app-github-button></app-github-button>
   <app-gitlab-button></app-gitlab-button> -->
