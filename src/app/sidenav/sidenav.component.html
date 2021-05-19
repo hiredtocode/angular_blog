@@ -1,24 +1,3 @@
-<mat-sidenav-container>
-  <mat-sidenav-content class="">
-    <main class="">
-      <button class="nav-toggle" aria-label="Menu icon">
-        <span class="hamburgerMenu"></span>
-      </button>
-      <app-sidenav-items></app-sidenav-items>
-      <!-- Main content area -->
-      <app-viewer></app-viewer>
-      <router-outlet></router-outlet>
-      <!-- Table of contents area -->
-      <div class="toc-container">
-        <div class="toc-inner">
-          <ul class="toc-list">
-            <li class="h1 ng-star-inserted">Title1</li>
-            <li class="h2 ng-star-inserted">Title2</li>
-            <li class="h2 ng-star-inserted">Title3</li>
-          </ul>
-        </div>
-      </div>
-    </main>
-    <app-footer></app-footer>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<nav class="sideNavContainer">
+  <app-sidenav-items></app-sidenav-items>
+</nav>
