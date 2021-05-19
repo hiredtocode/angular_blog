@@ -6,10 +6,11 @@ app > router-outlet + app-sidenav {
   margin-top: 56px;
   overflow-y: auto;
 }
-
-.logo {
-  width: 20px;
+.sideNavContainer {
+  width: 250px;
+  height: 100vh;
 }
+
 .toc-container {
   width: 18%;
   position: fixed;
@@ -40,32 +41,4 @@ ul.toc-list {
   padding: 9px 0 9px 12px;
   position: relative;
   transition: all 0.3s ease-in-out;
-}
-
-.hamburgerMenu {
-  display: block;
-  position: relative;
-}
-
-.hamburgerMenu,
-.hamburgerMenu::before,
-.hamburgerMenu::after {
-  width: 2em;
-  height: 3px;
-  background: black;
-  transition: transform 250ms ease-in-out;
-}
-
-.hamburgerMenu::before,
-.hamburgerMenu::after {
-  content: "";
-  position: absolute;
-  left: 0;
-}
-
-.hamburgerMenu::before {
-  bottom: 6px;
-}
-.hamburgerMenu::after {
-  top: 6px;
 }
