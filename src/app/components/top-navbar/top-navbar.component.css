@@ -54,10 +54,6 @@ button {
   color: dodgerblue;
 }
 
-.nav-links li a:hover {
-  color: blue;
-}
-
 button:hover {
   background-color: rgba(0, 136, 169, 0.8);
 }

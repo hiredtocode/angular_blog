@@ -32,10 +32,6 @@ a {
   color: dodgerblue;
 }
 
-.nav-list li a:hover {
-  color: blue;
-}
-
 .nav-toggle {
   position: absolute;
   top: 2em;

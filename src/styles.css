@@ -4,3 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Main and left sidebar menu */
+.nav li a:hover {
+  color: white;
+  background: rgb(248, 248, 248);
+}
