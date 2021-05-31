@@ -1,13 +1,13 @@
 <nav class="nav-container">
   <!-- Menu button at the top left side -->
   <!-- //TODO Menu button toggle "https://www.youtube.com/watch?v=v8NpQYH2O5M" -->
-  <a href="/">
+  <a routerLink="/">
     <img id="logo" src="../../assets/img/homepage/jh-logo.png" alt="" />
   </a>
   <!-- Spacer -->
   <span class="spacer"></span>
   <!-- Page navigation middle section -->
-  <ul class="nav-links" role="navigation">
+  <ul class="nav nav-links" role="navigation">
     <li mat-button *ngFor="let link of links">
       <a routerLink="/{{ link }}">{{ link | uppercase }}</a>
     </li>
