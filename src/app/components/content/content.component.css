@@ -1,3 +1,9 @@
 .content-wrap {
   display: flex;
+  border-style: solid;
+}
+.outlet {
+  border-style: solid;
+  flex-grow: 0.82;
+  padding: 3em;
 }
