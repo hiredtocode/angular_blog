@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './angular-material/material.module';
 import { PortfolioComponent } from './pages/portfolio-page/portfolio-page.component';
 import { ResumeComponent } from './pages/resume-page/resume-page.component';
-import { MainComponent } from './pages/main-page/main-page.component';
+import { BlogComponent } from './pages/blog-page/blog-page.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
@@ -37,7 +37,7 @@ import { ContentComponent } from './components/content/content.component';
     AppComponent,
     PortfolioComponent,
     ResumeComponent,
-    MainComponent,
+    BlogComponent,
     NavigationComponent,
     ComponentSidenavComponent,
     ComponentNavComponent,
