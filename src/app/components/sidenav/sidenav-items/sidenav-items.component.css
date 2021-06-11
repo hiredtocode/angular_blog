@@ -26,10 +26,15 @@ a {
 .nav-list li a {
   transition: all 0.3s ease 0s;
   text-decoration: none;
-  text-align: center;
+  text-align: end;
   display: block;
+
   padding: 20px 30px;
   color: dodgerblue;
+}
+
+.sideNavLogo {
+  max-width: 25px;
 }
 
 .nav-toggle {
