@@ -1,11 +1,34 @@
-<ul class="nav nav-list">
-  <button class="nav-toggle">
-    <span class="hamburgerMenu"></span>
-  </button>
-  <li><a routerLink="#">Test 1</a></li>
-  <li><a routerLink="#">Test 2</a></li>
-  <li><a routerLink="#">Test 3</a></li>
-  <li><a routerLink="#">Test 4</a></li>
-  <li><a routerLink="#">Test 5</a></li>
-  <li><a routerLink="#">Test 6</a></li>
-</ul>
+<ng-container *ngIf="path === '/blog'">
+  <ul class="nav nav-list">
+    <button class="nav-toggle">
+      <span class="hamburgerMenu"></span>
+    </button>
+    <li *ngFor="let link of blogSideLinks">
+      <a routerLink="#"
+        ><img src="{{ link.imgFile }}" class="sideNavLogo" />{{ link.name }}</a
+      >
+    </li>
+  </ul>
+</ng-container>
+
+<ng-container *ngIf="path === '/resume'">
+  <ul class="nav nav-list">
+    <button class="nav-toggle">
+      <span class="hamburgerMenu"></span>
+    </button>
+    <li *ngFor="let link of resumeSideLinks">
+      <a routerLink="#">{{ link.name }}</a>
+    </li>
+  </ul>
+</ng-container>
+
+<ng-container *ngIf="path === '/portfolio'">
+  <ul class="nav nav-list">
+    <button class="nav-toggle">
+      <span class="hamburgerMenu"></span>
+    </button>
+    <li *ngFor="let link of portfolioSideLinks">
+      <a routerLink="#">{{ link.name }}</a>
+    </li>
+  </ul>
+</ng-container>
