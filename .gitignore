@@ -20,6 +20,9 @@ speed-measure-plugin*.json
 .classpath
 .c9/
 *.launch
+*.angular/
+*.pack
+*.pack.old
 .settings/
 *.sublime-workspace
 
@@ -44,3 +47,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+.angular/cache/13.2.5/angular-webpack/1273cfe0d92de82cdbc04a229c96011f1f3d35f2/0.pack
